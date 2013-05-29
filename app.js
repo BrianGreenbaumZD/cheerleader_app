@@ -25,8 +25,8 @@
     
         this.switchTo('main', {
             sayCheers: cheers[Math.floor(Math.random()*cheers.length)]
-          // When support for underscore.js is bumped up just uncomment that line it should work
-          // displayCheers: _.random(0, cheers.length)
+            // When support for underscore.js is bumped up just uncomment that line it should work
+            // displayCheers: _.random(0, cheers.length)
         });
     }
   };
