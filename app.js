@@ -17,14 +17,14 @@
             firstName = helpers.fmt('%@ %@', fullName[0], fullName[1]);  
         }
 
-        var cheersList = this.I18n.t("terms").split(','); 
+        var cheersList = this.I18n.t("cheers").split(','); 
 
         _.each(cheersList, function(cheer){
             cheers.push(helpers.fmt(cheer, firstName));
         });
     
         this.switchTo('main', {
-            displayCheers: cheers[Math.floor(Math.random()*cheers.length)]
+            sayCheers: cheers[Math.floor(Math.random()*cheers.length)]
           // When support for underscore.js is bumped up just uncomment that line it should work
           // displayCheers: _.random(0, cheers.length)
         });
