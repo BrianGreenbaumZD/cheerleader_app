@@ -3,11 +3,3 @@
   <h3>{{setting "name"}}</h3>
 </header>
 <section data-main/>
-<footer>
-<!--   By: <a href="mailto:{{author.email}}">
-    {{author.name}} -->
-  </a>
-  <p>
-  </p>
-</footer>
-</div>

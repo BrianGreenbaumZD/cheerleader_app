@@ -2,32 +2,32 @@
 
   return {
     events: {
-      'app.activated':'doSomething'
+      'app.activated':'initiateQuotes'
     },
 
-    doSomething: function() {
-    	var a = [
-    		'You the man and/or woman!',
-    		'Own it!',
-    		'You are the ticketmaster!',
-    		'This ticket has nothing on you!',
-    		'Support for the win!',
-    		'Who needs macros?  You got this!',
-    		'Make the customer love you!',
-    		'Are you feeling the Zen yet?',
-    		'You are beautiful!',
-    		'S-U-P-P-O-R-T SUPPORT!',
-    		'Dig deep!',
-    		'Victoria Beckham would call you Supporty Spice!',
-    		'You have the touch.... you have the power.',
-    		' Work it!',
-    		'Hey, Hey, You are The Man, if you cannot help them, a Macro can.',
+    initiateQuotes: function() {
+        var currentUser = this.currentUser().name(),
+            fullName = currentUser.split(' '),
+            firstName = '',
+            cheers = [];
 
-    	];
-    	
-    	this.switchTo('main', {
-    		x: a[Math.floor(Math.random()*a.length)]	
-    	});
+        if (fullName.length <= 2) {
+            firstName = _.first(fullName);
+        } else {
+            firstName = helpers.fmt('%@ %@', fullName[0], fullName[1]);  
+        }
+
+        var cheersList = this.I18n.t("cheers").split(','); 
+
+        _.each(cheersList, function(cheer){
+            cheers.push(helpers.fmt(cheer, firstName));
+        });
+    
+        this.switchTo('main', {
+            sayCheers: cheers[Math.floor(Math.random()*cheers.length)]
+            // When support for underscore.js is bumped up just uncomment that line it should work
+            // displayCheers: _.random(0, cheers.length)
+        });
     }
   };
 
