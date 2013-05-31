@@ -1,0 +1,7 @@
+{
+  "app": {
+    "name":         "Cheerleader App",
+    "description":  "The ultimate positive reinforcement App for delivering awesome Customer Service!"
+  },
+   "cheers" : "%@ du er for sej !,Denne ticket har intet at komme efter %@ !,Hvem har brug for makroer? Du har styr på det %@ !,Kunderne vil elske dig %@ !,Føler du dig Zen %@ ?,%@ giv den gas,%@ hvis du ikke kan hjælpe dem er der intet der kan!,%@ fortsæt det gode arbejde !,%@ jeg er imponeret over hvor effektiv du er,%@ jeg ved ærlig talt ikke hvordan vi ville klare os uden dig,%@ kom så ! Jeg ved du kan !,%@ du fortjener en medalje,Dit land vil være stolt %@,Viva %@ !,Ingen kan gøre det bedre end dig %@ bliv ved !,Jeg har aldrig tvivlet på dig %@,Victoria Beckham vil kalde dig Supporty Spice!,S-U-P-P-O-R-T SUPPORT!,Du er kongen af Support,Kan det være nemmere?"
+}
